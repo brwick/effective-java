@@ -5,7 +5,7 @@
     <artifactId>effective-java</artifactId>
     <version>1.0</version>
     <name>effective-java</name>
-    <description>Example code for "Effective Java Second Edition" created by Joshua Bloch</description>
+    <description>Examples from Effective Java</description>
     <dependencies>
         <dependency>
             <groupId>junit</groupId>
