@@ -2,7 +2,8 @@ package org.brwick.effectivejava.ch04.item16;
 
 import com.google.common.collect.Lists;
 
-import junit.framework.Assert;
+import static org.junit.Assert.assertNotSame;
+import static org.junit.Assert.assertEquals;
 
 import org.junit.Test;
 
@@ -15,7 +16,7 @@ public class BrokenInstrumentedHashSetTest {
   public void testAddAll() throws Exception {
     BrokenInstrumentedHashSet<Integer> brokenSet = new BrokenInstrumentedHashSet();
     brokenSet.addAll(Lists.newArrayList(1, 2, 3));
-    Assert.assertNotSame(brokenSet.getAddCount(), 3);
-    Assert.assertEquals(brokenSet.getAddCount(), 6);
+    assertNotSame(brokenSet.getAddCount(), 3);
+    assertEquals(brokenSet.getAddCount(), 6);
   }
 }
